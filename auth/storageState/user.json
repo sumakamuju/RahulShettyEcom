@@ -1,0 +1,119 @@
+{
+  "cookies": [
+    {
+      "name": "_gcl_au",
+      "value": "1.1.1555809481.1788950761.-.-.1788950761.1413923052.1788950762.1788950761",
+      "domain": ".rahulshettyacademy.com",
+      "path": "/",
+      "expires": 1796726761,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "li_sugr",
+      "value": "e16f1494-5d9a-403b-b9ea-986d470b1d0e",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1796726763.063067,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "bcookie",
+      "value": "\"v=2&c77eed8c-69bb-4ae8-8c76-ebe2b8689b34\"",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1820486763.063321,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "lidc",
+      "value": "\"b=OGST07:s=O:r=O:a=O:p=O:g=3482:u=1:x=1:i=1788950761:t=1789037161:v=2:sig=AQF0D7YpONB-K4NYO10InEPEU2xem4ff\"",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1789037160.951772,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__cf_bm",
+      "value": "JLef_FcsdwjbF5aSB6v324akZHkBa3D0xS0O.NZygPw-1788950761.8092337-1.0.1.1-NixofljjYFEQ9YAVvo2DUSAzaXl1MllRuifo3luzrdWPOQNnVqkQnFwZuK07cshjG2EtZrSfz0D.zPEoVH5cLWi9FR04A2nfLpMCHHAAumNYXkaqxbFY2fH95QrDddYl",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1788952561.95186,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ga",
+      "value": "GA1.1.1213053928.1788950762",
+      "domain": ".rahulshettyacademy.com",
+      "path": "/",
+      "expires": 1823510762.066261,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "UserMatchHistory",
+      "value": "AQJBV2JGR4fhHAAAAaCFxlNpp8wJCBPi1v5A_Pe2SuioB067N3PrIeQIhF6-y-WjgBSXRMAdd4vCOA",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1791542762.427968,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "AnalyticsSyncHistory",
+      "value": "AQLOSmm9Kx649QAAAaCFxlNp-5xKVxgq4KHvIXbFAUeh0ynHdgU3xB2zG4urRGiMA-sf1wIKM37I2w30io0kmA",
+      "domain": ".linkedin.com",
+      "path": "/",
+      "expires": 1791542762.42805,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "bscookie",
+      "value": "\"v=1&2026090910460250b9d3f4-9d1e-45c0-8b70-247b885fb2bbAQHdrS87caLA4TLEK4CP2zkvVuTY6zuQ\"",
+      "domain": ".www.linkedin.com",
+      "path": "/",
+      "expires": 1820486762.799284,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ga_NVJT9K1HZ2",
+      "value": "GS2.1.s1788950762$o1$g0$t1788950767$j55$l0$h852301781",
+      "domain": ".rahulshettyacademy.com",
+      "path": "/",
+      "expires": 1823510767.909792,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://rahulshettyacademy.com",
+      "localStorage": [
+        {
+          "name": "li_adsId",
+          "value": "8a128154-8bd5-4fde-a9ae-5ed92c7ecf7e"
+        },
+        {
+          "name": "_gcl_ls",
+          "value": "{\"schema\":\"gcl\",\"version\":1,\"gsid_dc\":{\"value\":{\"joinId\":\"rOErIgV8FO6euRQ8plNwbqOmwTG3oKyTKQ\",\"lastJoinedTimeMs\":1788950761186},\"expires\":1788951061186},\"gcl_ctr\":{\"value\":{\"value\":1,\"timeouts\":0,\"errors\":0,\"eopCount\":0,\"creationTimeMs\":1788950767891},\"expires\":1796726767891}}"
+        }
+      ]
+    }
+  ]
+}
