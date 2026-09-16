@@ -14,6 +14,11 @@ import { ConfigManager } from './config/ConfigManager';
  */
 export default defineConfig({
   testDir: './tests',
+  // timeout:2000,
+  // expect:{
+  //   timeout:20000
+  // },
+
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -21,43 +26,45 @@ export default defineConfig({
   /* Retry on CI only */
   retries: process.env.CI ? 2 : 0,
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 1 : undefined,
+  workers: 2,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter:[ 
+  reporter: [
     ['html', { outputFolder: 'playwright-report', open: 'never' }],
-    ['allure-playwright']
+    // ['allure-playwright']
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    headless: false,
+    headless: true,
     viewport: null,
-    launchOptions: {args:['--start-maximized']
+    launchOptions: {
+      args: ['--start-maximized']
     },
     /* Base URL to use in actions like `await page.goto('')`. */
-     baseURL: ConfigManager.base_url_config,
+    baseURL: ConfigManager.base_url_config,
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
-    screenshot:'on-first-failure'
+    screenshot: 'on-first-failure',
+    //video:"retain-on-failure"
   },
   /* Configure projects for major browsers */
   projects: [
-  {
-    name: 'setup',
-    testMatch: /auth\.setup\.ts/,
-  },
-
-  {
-    name: 'chromium',
-    use: {
-      
-      headless: false,
-      viewport: null,
-      launchOptions: {args:['--start-maximized']},
-      storageState: 'auth/storageState/user.json',
+    {
+      name: 'setup',
+      testMatch: /auth\.setup\.ts/,
     },
-    dependencies: ['setup'],
-  },
+
+    {
+      name: 'chromium',
+      use: {
+
+        headless: true,
+        viewport: null,
+        launchOptions: { args: ['--start-maximized'] },
+        storageState: 'auth/storageState/user.json',
+      },
+      dependencies: ['setup'],
+    },
 
     /* {
       name: 'firefox',

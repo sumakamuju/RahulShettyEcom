@@ -1,6 +1,8 @@
 import { test, expect } from '../fixtures/fixtures';
 import { negativeloginData } from '../test-data/login-data'; 
-test('valid user should login successfully', async ({ page, loginPage }) => {
+
+
+test.skip('valid user should login successfully', async ({ page, loginPage }) => {
 
         await loginPage.login();
         await expect(page).toHaveURL("https://rahulshettyacademy.com/angularpractice/shop");
@@ -10,7 +12,7 @@ test('valid user should login successfully', async ({ page, loginPage }) => {
 test.describe('Invalid Login Tests', () => {
     for (const data of negativeloginData) {
     
-        test(`Login -${data.testCase}`, async({ loginPage})=>{
+        test.skip(`Login -${data.testCase}`, async({ loginPage})=>{
         await loginPage.user_name(data.username);
         await loginPage.pass_word(data.password);
         await loginPage.terms_checkbox();

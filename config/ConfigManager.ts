@@ -12,4 +12,7 @@ static get user_name_config(){
 static get pass_word_config(){
     return process.env.password;
 }
+static get base_url2_config(){
+    return process.env.baseurl2;
+}
 }
